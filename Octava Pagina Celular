@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<style>
+nav ul li{
+display: inline-block;
+}
+
+.div1{
+width: 20%;
+float: left;
+padding: 1px;
+box-sizing: border-box;
+}
+
+.div2{
+width: 70%;
+float: left;
+padding: 1px;
+box-sizing: border-box;
+}
+
+.div3{
+width: 65%;
+float: right;
+padding: 10px;
+box-sizing: border-box;
+margin-left: 15%;
+}
+
+.div4{
+width: 100%;
+float: left;
+padding: 1px;
+box-sizing: border-box;
+}
+
+.div5{
+height: 225px;
+width: 15%;
+float: left;
+padding: 2px; 
+box-sizing: border-box;
+margin-left: 0%;
+}
+
+.div6{
+height: 225px;
+width: 56%;
+float: left;
+padding: 10px;
+box-sizing: border-box;
+margin-left: 15%;
+}
+
+.div7{
+height: 225px;
+width: 15%;
+float: left;
+padding: 2px; 
+box-sizing: border-box;
+margin-left: 0%;
+}
+
+.div8{
+height: 225px;
+width: 70%;
+float: left;
+padding: 10px;
+box-sizing: border-box;
+margin-left: 15%;
+}
+
+.div9{
+height: 225px;
+width: 15%;
+float: left;
+padding: 2px; 
+box-sizing: border-box;
+margin-left: 0%;
+}
+
+.div10{
+height: 225px;
+width: 70%;
+float: left;
+padding: 10px;
+box-sizing: border-box;
+margin-left: 15%;
+}
+
+.div11{
+height: 225px;
+width: 15%;
+float: left;
+padding: 2px; 
+box-sizing: border-box;
+margin-left: 0%;
+}
+
+.div12{
+height: 225px;
+width: 70%;
+float: left;
+padding: 10px;
+box-sizing: border-box;
+margin-left: 15%;
+}
+
+input{
+color: black;
+font-family: cambria;
+font-size: 2vh;
+}
+
+h1{
+color: red;
+font-family: cambria;
+font-size: 3vh;
+}
+
+.p1{
+color: black;
+font-family: cambria;
+font-size: 3vh;
+text-align: justify;
+}
+
+img{
+width:75%;
+height: 50%;
+}
+</style>
+<title>Puma Calendar</title>   
+<link rel="stylesheet" href="EstiloOctavaPantalla.css">
+</head>
+
+<body>
+<div class="div1">
+<img src="logoSistemas.jpg" alt="Mountain View">
+</div>
+
+<div class="div2">
+<h1>Facultad de Sistemas</h1>
+</div>
+
+<div class="div3">
+<nav>
+<ul>
+<li><input type="button" name="botonInicio" value="Inicio">
+<li><input type="button" name="botonEventos" value="Eventos">
+<li><input type="button" name="botonConfiguracion" value="Configuracion">
+</nav>
+</ul>
+</div>
+
+<div class="div4">
+<p class="p1">
+Esta es la lista de usuarios registrados en la plataforma
+</p>
+</div>
+
+<div class="div5">
+<img src="Imagent.jpg" alt="FOTO">
+</div>
+
+<div class="div6">
+<textarea class="a1" rows="5"cols="50"></textarea>
+</div>
+
+<div class="div7">
+<img src="Imagent.jpg" alt="FOTO">
+</div>
+
+<div class="div8">
+<textarea class="a1" rows="5"cols="50"></textarea>
+</div>
+
+<div class="div9">
+<img src="Imagent.jpg" alt="FOTO">
+</div>
+
+<div class="div10">
+<textarea class="a1" rows="5"cols="50"></textarea>
+</div>
+
+<div class="div11">
+<img src="Imagent.jpg" alt="FOTO">
+</div>
+
+
+<div class="div12">
+<textarea class="a1" rows="5"cols="50"></textarea>
+</div>
+</body>
+</html>
