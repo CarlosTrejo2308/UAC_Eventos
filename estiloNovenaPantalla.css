@@ -1,0 +1,113 @@
+﻿.div1{
+width: 20%;
+float: left;
+padding: 0px;
+}
+
+.div2{
+width: 80%;
+float: left;
+padding: 0px;
+}
+
+.div3{
+}
+
+.div4{
+width=100%;
+float: left;
+padding: 0px;
+}
+
+.div5{
+width=50%;
+float: left;
+padding: 0px;
+}
+
+.div6{
+width=50%;
+float:left;
+padding:0px;
+margin-left: 65px;
+}
+
+.div7{
+width: 100%;
+float: left;
+padding 0px;
+}
+
+.div8{
+width: 150px;
+float: left;
+padding 0px;
+}
+
+.div9{
+width: 150px;
+float: left;
+padding 0px;
+margin-top:30px;
+}
+
+.div10{
+width: 100%;
+float: left;
+padding 0px;
+}
+
+.div11{
+width: 150px;
+float: left;
+padding 0px;
+}
+
+.div12{
+width: 150px;
+float: left;
+padding: 0px;
+}
+
+.div13{
+width:100%;
+float: left;
+padding 0px;
+}
+
+.div14{
+width:300px;
+float:left;
+padding: 0px;
+margin-left: 150px;
+}
+
+.div15{
+width: 150px;
+float:left;
+padding: 0px;
+}
+
+
+input{
+color: black;
+font-family: cambria;
+font-size: 2vh;
+}
+
+h1{
+color: red;
+font-family: cambria;
+font-size: 3vh;
+}
+
+button{
+color: black;
+font-family: cambria;
+font-size:1vh;
+}
+
+img{
+width: 80%;
+height: 80%;
+}
