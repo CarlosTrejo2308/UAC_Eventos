@@ -1,0 +1,77 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Puma Calendar</title>   
+<link rel="stylesheet" href="estiloSextaPantalla.css">
+</head>
+
+<body>
+<div class="div1">
+<img src="logoSistemas.jpg" alt="Logo Sistemas" width="198" height="71">
+</div>
+
+<div class="div2">
+<h1>Facultad de Sistemas</h1>
+</div>
+
+<!-- menú -->
+<nav class="nav">
+<ul>
+<li><a href="">Inicio</a></li>
+<li><a href="">Eventos</a></li>
+<li><a href="">Configuración</a></li>
+</ul>
+
+<div class="div4">
+<p class="p1">
+Nombre Evento
+</p>
+</div>
+
+<!-- caja para fecha -->
+<div class="div5">
+<p class="p2"> /	/ </p>
+</div>
+
+<div class="div6">
+<img class="img2" src="calendario.jpg" width="35" height="35" align="right">
+</div>
+
+<div class="div7">
+<p class="p3">
+Descripción del evento ya creado
+</p>
+</div>
+
+<div class="div8">
+<input class="boton1" type="button" name="botonAsistire" value="Asistiré">
+</div>
+
+<div class="div9">
+<input class="boton2" type="button" name="botonTalvezAsista" value="Talvez Asista">
+</div>
+
+<div class="div10">
+<p class="p4">
+Ubicación
+</p>
+</div>
+
+<div class="div11">
+<p class="p5"> Foto del evento </p>
+</div>
+
+<div class="div12map"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="paginaweb"></script>
