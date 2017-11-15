@@ -24,13 +24,14 @@ width: 15%;
 float: left;
 padding: 0px;
 box-sizing: border-box;
-margin-left: 4%;
+border: 1px solid black;
+margin-left: 1%;
 }
 
 .div5{
 width: 71%;
 float: left;
-padding: 26px;
+padding: 0px;
 box-sizing: border-box;
 margin-left: 30%;
 }
@@ -66,4 +67,3 @@ text-align: justify;
 img{
 width:75%;
 height: 50%;
-}
