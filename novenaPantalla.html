@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<meta name = "viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Perfil</title>
+<link rel="stylesheet" href="estiloNovenaPantalla.css">
+<script>
+function letterOnly(input)
+{
+	var regex=/[^ a-z]/gi;
+	input.value= input.value.replace(regex,"");
+}
+</script>
+</head>
+
+
+<body>
+
+<div class="div1">
+<img src="logoSistemas.jpg" alt="OLLE NO">
+</div>
+
+<div class="div2">
+<h1>Facultad de Sistemas</h1>
+</div>
+
+<div class="div menu">
+	<ul>
+	  <li><a href="terceraPantalla.htm">Inicio</a></li>
+	  <li><a href="septimaPantalla.htm">Eventos</a></li>
+	  <li><a href="novenaPantalla.html">Configuración</a></li>
+	</ul>
+</div>
+
+
+
+	<div class="div3">
+		<p> Foto de Perfil </p>
+	</div>
+
+	<div class="div4">
+		<p> Cambiar Datos Personales</p>
+	</div>
+
+
+
+	<div class="div5">
+		<img src="user.jpg" width="150" height="150">
+	</div>
+
+	<div class="div6">
+		<input type="text" name="Nombres" placeholder="Nombres" onkeyup="letterOnly(this)"><br><br><br>
+
+		<input type="text" name="Apellidos" placeholder="Apellidos" onkeyup="letterOnly(this)"><br><br><br>
+		<input type="button" name="botonGuardarCambios" value="Guardar Cambios">
+	</div>
+
+
+
+
+	<div class="div7">
+		<input type="file" name="botonSubirImagen" value="Ingresa tu foto">
+	</div>
+
+	<div class="div8">
+		<p>  </p>
+	</div>
+
+	<div class="div9">
+	<p> Para cambiar de Usuario es necesario cerrar <br>
+	    tu sesión actual
+	</p>
+	</div>
+
+	<div class="div10">
+		<p> </p>
+	</div>
+
+	<div class="div11">
+		<input type="button" onclick="location.href='primeraPantalla.htm';"name="botonLogOut" value="Log Out">
+	</div>
+
+
+</body>
+</html>
+	
