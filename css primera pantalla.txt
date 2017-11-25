@@ -1,0 +1,116 @@
+.div1{
+width: 20%;
+float: left;
+padding: 1px;
+box-sizing: border-box;
+}
+
+.div2{
+width: 70%;
+float: left;
+padding: 1px;
+box-sizing: border-box;
+}
+
+.div3{
+width: 100%;
+float: left;
+padding: 1px;
+box-sizing: border-box;
+}
+
+.div4{
+width: 15%;
+float: left;
+padding: 0px;
+box-sizing: border-box;
+margin-left: 4%;
+}
+
+.div5{
+width: 71%;
+float: left;
+padding: 26px;
+box-sizing: border-box;
+margin-left: 10%;
+color: red;
+font-family: cambria;
+}
+
+.div6{
+width: 15%;
+float: left;
+padding-top: 1px;
+box-sizing: border-box;
+margin-left: 4%;
+}
+
+.div7{
+width: 71%;
+float: left;
+padding: 26px;
+box-sizing: border-box;
+margin-left: 10%;
+}
+
+.div8{
+width: 100%;
+float: left;
+padding: 1px;
+box-sizing: border-box;
+margin-left: 39.5%;
+}
+
+.div9{
+width: 100%;
+float: left;
+padding: 1px;
+box-sizing: border-box;
+margin-left: 4%;
+}
+
+.div10{
+width: 96%;
+float: left;
+padding: 1px;
+box-sizing: border-box;
+margin-left: 15%;
+}
+
+.div11{
+width: 40%;
+float: left;
+padding: 10px;
+box-sizing: border-box;
+margin-left: 20%;
+}
+
+input{
+color: black;
+font-family: cambria;
+font-size: 2vh;
+}
+
+h1{
+color: red;
+font-family: cambria;
+font-size: 3vh;
+}
+
+.p1{
+color: black;
+font-family: cambria;
+font-size: 3vh;
+text-align: justify;
+}
+
+img{
+width:75%;
+height: 50%;
+}
+
+.error{
+color: red;
+font-family: cambria;
+font-size: 3vh;
+}

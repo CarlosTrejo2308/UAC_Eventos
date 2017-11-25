@@ -1,0 +1,193 @@
+<?php
+$emailErr = $passwordErr ="";
+$email = $password= $userPwdInvalido ="";
+ if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ header('Content-Type: text/html; charset=UTF-8');
+include "php/db_connection.php";
+
+ ini_set('display_errors', 'Off');
+ ini_set('display_startup_errors', 'Off');
+ error_reporting(0);
+ 
+  
+   $ends= '@uadec.edu.mx';
+    $email=$_POST["correoInstitucional"];
+    $password=$_POST["contraseña"];
+   if (empty($email) or empty($password)) {
+       if(empty($email)){
+    $emailErr = "Email is required";
+
+       }
+   if (empty($password)) {
+    $passwordErr = "Password is required";
+  } 
+  }
+  else{
+      function endsWith($currentString, $target)
+{
+    $length = strlen($target);
+    if ($length == 0) {
+        return true;
+    }
+ 
+    return (substr($currentString, -$length) === $target);
+}
+   
+    
+    if(!endsWith($email,$ends)){
+       echo "Correo no válido, porfavor ingresa un correo con terminación @uadec.edu.mx";
+    } else{
+        openDBCnx ();
+       $query ="SELECT * FROM usuarios where CORREO_INST = '".$email."' and CONTRASENA = '".$password."'";
+       $result = $coneccion->query($query);
+       if($result->num_rows > 0){
+           
+          while($row = $result->fetch_assoc()) {
+        
+       // echo "id: " . $row["CORREO_INST"];
+               header ("Location: quintaPantalla.php");
+    }
+} 
+       }
+       $userPwdInvalido='Usuario y/o contraseña inválidos';
+      /*
+       if(mail ( 'angelica_marc@hotmail.com' , 'correo', 'hola') ){
+           echo"mensaje enviado";
+       }
+       else{
+           echo"mensaje no enviado";
+       }
+       $connection->close;
+       
+       */
+  }
+   }
+   
+  /*  
+ if (empty($_POST["correoInstitucional"]) ) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["correoInstitucional"]);
+  }
+   if (empty($_POST["contraseña"])) {
+    $passwordErr = "Password is required";
+  } else {
+    $password = test_input($_POST["contraseña"]);
+  }
+  */
+  
+    
+    
+ /*       
+    
+       function endsWith($currentString, $target)
+{
+    $length = strlen($target);
+    if ($length == 0) {
+        return true;
+    }
+ 
+    return (substr($currentString, -$length) === $target);
+}
+   
+    
+    if(!endsWith($email,$ends)){
+       echo "Correo no válido, porfavor ingresa un correo con terminación @uadec.edu.mx";
+    } else{
+        openDBCnx ();
+       $query ="SELECT * FROM usuarios where CORREO_INST = '".$email."' and CONTRASENA = '".$contraseña."'";
+       $result = $coneccion->query($query);
+       if($result->num_rows > 0){
+          while($row = $result->fetch_assoc()) {
+       // echo "id: " . $row["CORREO_INST"];
+               header ("Location: quintaPantalla.php");
+    }
+} else {
+    echo "Usuario y contraseña incorrectos";
+}
+       }
+       echo"hola";
+       if(mail ( 'angelica_marc@hotmail.com' , 'correo', 'hola') ){
+           echo"mensaje enviado";
+       }
+       else{
+           echo"mensaje no enviado";
+       }
+       $connection->close;
+   */
+ 
+ ?>
+<!DOCTYPE html>
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Puma Calendar</title>   
+ <meta charset="UTF-8">
+<link rel="stylesheet" href="Estilos/estiloPrimeraPantalla.css">
+</head>
+
+<body>
+<div class="div1">
+<img src="logoSistemas.jpg" alt="Logo Facultad de Sistemas">
+</div>
+
+<div class="div2">
+<h1>Facultad de Sistemas</h1>
+</div>
+
+<div class="div3">
+<p class="p1">
+Bienvenidos a "Puma Calendar" la página web informativa sobre los
+próximos eventos de la facultad de Sistemas y la UAdeC.
+Para poder acceder es necesario contar con tu "Correo Insitucional"
+proporcionado por la UAdeC.
+</p>
+</div>
+ <p><span class="error">* required field.</span></p> 
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+
+<div class="div4">
+<p class="p2">
+Correo Institucional
+</p>
+</div>
+
+<div class="div5">
+  <input type="text" name="correoInstitucional"  value="<?php echo $email?>">
+  <span class="error">* <?php echo $emailErr; echo $userPwdInvalido?></span>
+</div>
+
+<div class="div6">
+<p class="p2">Contraseña</p>
+</div>
+
+<div class="div7">
+<input type="password" name="contraseña"  value="<?php echo $password?>">
+<span class="error">* <?php echo $passwordErr;?></span>
+
+</div>
+
+<div class="div8">
+<input type="submit" name="botonAceptar" value="Aceptar">
+</div>
+</form>
+    
+<div class="div9">
+    <a href="php/correo.php">Olvidé mi contraseña</a>
+</div>
+
+<form action="segundaPantalla.php">  
+<div class="div10">
+<p class="p2">
+En caso de ser nuevo, crea tu perfil
+</p>
+</div>
+    
+<div class="div11">
+<input type="submit" name="botonNuevoPerfil" value="Nuevo Perfil">
+</div>
+</form>
+ 
+</body>
+</html>
