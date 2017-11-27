@@ -1,9 +1,14 @@
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
 	<title>Registro</title>
-	<link rel="stylesheet" href="estiloSegundaPantalla.css">
+	<link rel="stylesheet" href="   estiloSegundaPantalla.css">
 </head>
 
 <body>
@@ -18,7 +23,7 @@
 	<div class="div3">
 		<p class='P1'>
 			Foto de Perfil
-		</p> 
+		</p>
 	</div>
 
 	<div class="div4">
@@ -27,14 +32,14 @@
 	</div>
 
 	<div class="div5">
-		<form action="/action_page.php">
-			<input type="text" name="fname" placeholder="Nombre"><br><br>
-			<input type="text" name="lname" placeholder="Apellido"><br><br>
-			<input type="text" name="subject" placeholder="Carrera"><br><br>
-			<input type="text" name="email" placeholder="Correo institucional"><br><br>
-			<input type="password" name="pass1" placeholder="Contrasena"><br><br>
-			<input type="password" name="pass2" placeholder="Confirmar Contrasena"><br><br>
-			<input type="submit" value="Registrar">
+		<form method="POST" action="connectivity_sign_up.php">
+			<input type="text" name="fname" placeholder="Nombre" required><br><br>
+			<input type="text" name="lname" placeholder="Apellido" required><br><br>
+			<input type="text" name="subject" placeholder="Carrera" required><br><br>
+			<input type="text" name="email" placeholder="Correo institucional" required><br><br>
+			<input type="password" name="pass1" placeholder="Contrasena" required><br><br>
+			<input type="password" name="pass2" placeholder="Confirmar Contrasena" required><br><br>
+			<input id="button" type="submit"  name = "submit" value="Registrar">
 		</form>
 	</div>
 
@@ -45,3 +50,4 @@
 	</div>
 </body>
 </html>
+
